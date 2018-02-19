@@ -1,6 +1,6 @@
 <?php
 
-namespace klisl\mytest;
+namespace yozh\template;
 
 use yii\base\Module as BaseModule;
 

@@ -1,30 +1,26 @@
-yii2-mytest
-=================
+Template
+========
+Description
 
+Installation
+------------
 
-Расширение предназначено для ...
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Особенности и преимущества:
+Either run
 
-*	1 преимущество
-*	2 преимущество
-*	3 преимущество
-
-
-  
-Установка
-------------------
-* Установка пакета с помощью Composer
 ```
-composer require klisl/yii2-mytest
+php composer.phar require --prefer-dist yozh/yii2-template "*"
 ```
 
-* Выполнить миграцию для создания нужной таблицы в базе данных (консоль):
+or add
+
 ```
-yii migrate --migrationPath=@klisl/mytest/migrations --interactive=0
+"yozh/yii2-template": "*"
 ```
 
-Использование
-------------------
+to the require section of your `composer.json` file.
 
-Мой блог: [klisl.com](http://klisl.com)  
+
+Usage
+-----
