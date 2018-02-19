@@ -13,7 +13,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "yiisoft/yii2": "~2.0.0"
+    "yozh/yii2-base": "@dev"
   },
   "extra": {
     "bootstrap": "yozh\\template\\Bootstrap"
