@@ -2,12 +2,17 @@
 
 namespace yozh\template;
 
-class AssetsBundle extends yii\web\AssetBundle
+class AssetsBundle extends \yii\web\AssetBundle
 {
 
-    public $sourcePath = '@vendor/yozh/template/assets';
+    public $sourcePath = __DIR__ .'/assets/';
 
     public $css = [
         'css/style.css'
     ];
+	
+	public $publishOptions = [
+		//'forceCopy'       => true,
+	];
+	
 }

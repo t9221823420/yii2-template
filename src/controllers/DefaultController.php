@@ -2,14 +2,19 @@
 
 namespace yozh\template\controllers;
 
-use yozh\base\traits\CRUDTrait;
+use yozh\crud\traits\CRUDTrait;
 use yozh\template\models\DefaultModel;
+use yozh\template\AssetsBundle;
+
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
 class DefaultController extends Controller
 {
-	use CRUDTrait;
+	use CRUDTrait {
+		actionIndex as protected traitActionIndex;
+	}
+	
 	
 	protected static function primaryModel()
 	{
@@ -24,12 +29,17 @@ class DefaultController extends Controller
 				'rules' => [
 					[
 						'allow' => true,
-						'roles' => ['@'],
+						'roles' => [ '@' ],
 					],
 				],
 			],
 		];
 	}
 	
+	public function actionIndex()
+	{
+		//AssetsBundle::register( $this->view );
+		return $this->traitActionIndex();
+	}
 	
 }
