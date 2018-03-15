@@ -14,7 +14,7 @@ class DefaultController extends Controller
 		actionIndex as protected traitActionIndex;
 	}
 	
-	protected static function primaryModel()
+	protected static function defaultModel()
 	{
 		return BaseModel::className();
 	}
