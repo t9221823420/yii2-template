@@ -2,9 +2,9 @@
 
 namespace yozh\template\models;
 
-use yozh\base\models\Model as ActiveRecord;
+use yozh\base\models\BaseModel as ActiveRecord;
 
-class BaseModel extends ActiveRecord
+abstract class BaseModel extends ActiveRecord
 {
 
 }
