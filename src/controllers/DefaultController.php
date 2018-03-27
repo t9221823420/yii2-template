@@ -4,7 +4,7 @@ namespace yozh\template\controllers;
 
 use yozh\crud\traits\CRUDTrait;
 use yozh\template\models\BaseModel;
-use yozh\template\AssetsBundle;
+use yozh\template\AssetBundle;
 use yozh\base\controllers\DefaultController as Controller;
 
 
@@ -21,7 +21,7 @@ class DefaultController extends Controller
 	
 	public function actionIndex()
 	{
-		//AssetsBundle::register( $this->view );
+		//AssetBundle::register( $this->view );
 		return $this->traitActionIndex();
 	}
 	

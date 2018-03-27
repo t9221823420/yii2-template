@@ -2,7 +2,7 @@
 
 namespace yozh\template;
 
-class AssetsBundle extends \yozh\base\AssetBundle
+class AssetBundle extends \yozh\base\AssetBundle
 {
 
     public $sourcePath = __DIR__ .'/../assets/';
