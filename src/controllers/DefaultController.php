@@ -2,27 +2,34 @@
 
 namespace yozh\template\controllers;
 
+use yozh\base\components\Model;
 use yozh\crud\traits\CRUDTrait;
-use yozh\template\models\BaseModel;
-use yozh\template\AssetBundle;
-use yozh\base\controllers\DefaultController as Controller;
+use yozh\exchange\models\BaseModel;
+use yozh\exchange\AssetBundle;
+use yozh\crud\controllers\DefaultController as Controller;
 
 
 class DefaultController extends Controller
 {
+	/*
 	use CRUDTrait {
 		actionIndex as protected traitActionIndex;
 	}
+	*/
 	
+	/*
 	protected static function defaultModel()
 	{
 		return BaseModel::className();
 	}
+	*/
 	
+	/*
 	public function actionIndex()
 	{
-		//AssetBundle::register( $this->view );
+		// AssetBundle::register( $this->view );
 		return $this->traitActionIndex();
 	}
+	*/
 	
 }

@@ -41,7 +41,7 @@ $attributes = $model->attributes;
 
 	?>
 
-    <div class="form-group">
+    <div class="form-controls">
 		<?= Html::submitButton( Yii::t( 'app', 'Save'), [ 'class' => 'btn btn-success' ] ) ?>
     </div>
 	
