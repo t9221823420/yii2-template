@@ -16,6 +16,10 @@ class AssetBundle extends \yozh\base\AssetBundle
         //'js/yozh-template.js'
     ];
 	
+    public $depends = [
+        //'yii\bootstrap\BootstrapAsset',
+    ];
+
 	public $publishOptions = [
 		//'forceCopy'       => true,
 	];
