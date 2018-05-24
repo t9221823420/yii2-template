@@ -2,7 +2,7 @@
 
 use yozh\base\components\Migration;
 use yozh\base\components\db\Schema;
-use yozh\base\components\ArrayHelper;
+use yozh\base\components\utils\ArrayHelper;
 
 /**
  * Class m180305_040759_tablename_table_dev
