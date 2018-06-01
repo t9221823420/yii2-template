@@ -9,11 +9,11 @@ use yozh\form\ActiveForm;
 	
 	<?php $form = ActiveForm::begin(); ?>
 	
-	<?php $fields = $form->fileds( $model,
+	<?php $fields = $form->fields( $model,
 		method_exists( $model, 'attributeEditList' )
                 ? $model->attributeEditList()
-                : array_keys( $model->attributes ),
-		false
+			: array_keys( $model->attributes ),
+		[ 'print' => false, ]
 	);
 	
     foreach( $fields as $field ) {
