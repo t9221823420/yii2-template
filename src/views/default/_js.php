@@ -13,12 +13,7 @@ use yii\helpers\Url;
 	
 	$( function () {
 		
-		/*
-			$(document).on('change', 'select.yozh-nested-select', function () {
-				$($(this).data('selector')).load($(this).attr('url'), 'value=' + $(this).val());
-			});
-		*/
-		
+	
 	} );
 	
 	<?php break; case 'modal' : ?>
