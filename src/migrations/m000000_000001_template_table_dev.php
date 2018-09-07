@@ -9,7 +9,7 @@
 
 use yozh\base\components\db\Migration;
 use yozh\base\components\db\Schema;
-use yozh\base\components\utils\ArrayHelper;
+use yozh\base\components\helpers\ArrayHelper;
 
 
 class m000000_000001_template_table_dev extends Migration
