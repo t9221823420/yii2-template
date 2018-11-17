@@ -9,7 +9,7 @@
 namespace yozh\template\models;
 
 use Yii;
-use yozh\base\models\BaseModel as ActiveRecord;
+use yozh\base\models\BaseActiveRecord as ActiveRecord;
 
 class Template extends ActiveRecord
 {
