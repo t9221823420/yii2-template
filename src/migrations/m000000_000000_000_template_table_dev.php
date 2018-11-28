@@ -10,18 +10,18 @@
 use yozh\base\components\db\Migration;
 use yozh\base\components\db\Schema;
 use yozh\base\components\helpers\ArrayHelper;
+use yozh\template\models\Template;
 
 
-class m000000_000001_template_table_dev extends Migration
+class m000000_000000_000_template_table_dev extends Migration
 {
-	protected static $_table = 'template';
+	protected static $_table;
 	
-	public function safeUp( $params = [] )
-	{
+	public function __construct( array $config = [] ) {
 		
-		parent::safeUp([
-			'mode' => 1 ? static::ALTER_MODE_UPDATE : static::ALTER_MODE_IGNORE,
-		]);
+		static::$_table = static::$_table ?? Template::getRawTableName();
+		
+		parent::__construct( $config );
 		
 	}
 	
