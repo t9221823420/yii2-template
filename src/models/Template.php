@@ -18,14 +18,25 @@ class Template extends ActiveRecord
 		return '{{%template}}';
 	}
 	
-	public function rules()
+	public function rules( $rules = [], $update = false )
 	{
-		return [
-			[ [ 'text', ], 'required' ],
-			[ [ 'text', ], 'string'],
-			[ [ 'text', ], 'filter', 'filter' => 'trim' ],
-			[ [ 'text', ], 'filter', 'filter' => '\yii\helpers\HtmlPurifier::process' ],
-		];
+		static $_rules;
+		
+		if( !$_rules || $update ) {
+			
+			$_rules = parent::rules( \yozh\base\components\validators\Validator::merge( [
+				
+				[ [ 'text', ], 'required' ],
+				[ [ 'text', ], 'string' ],
+				[ [ 'text', ], 'filter', 'filter' => 'trim' ],
+				[ [ 'text', ], 'filter', 'filter' => '\yii\helpers\HtmlPurifier::process' ],
+			
+			], $rules ) );
+			
+		}
+		
+		return $_rules;
+		
 	}
-
+	
 }
